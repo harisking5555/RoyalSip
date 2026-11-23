@@ -102,7 +102,7 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         {/* Clean Spacious Laptop/Desktop Header Row */}
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-[#14224A] sm:text-5xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-[#241C24] sm:text-5xl">
             Every occasion,{' '}
             <span className="rainbow-heading italic">bottled Royal.</span>
           </h2>
@@ -113,7 +113,7 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
                 type="button"
                 onClick={() => scrollStep('left')}
                 aria-label="Previous solution card"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
               >
                 <ChevronLeft className="h-4 w-4" />
               </button>
@@ -121,7 +121,7 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
                 type="button"
                 onClick={() => scrollStep('right')}
                 aria-label="Next solution card"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
               >
                 <ChevronRight className="h-4 w-4" />
               </button>
@@ -146,8 +146,8 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
                 onClick={() => setFilter(tab.id)}
                 className={`relative pb-3 text-sm font-semibold transition-colors whitespace-nowrap shrink-0 ${
                   active
-                    ? 'text-[#14224A]'
-                    : 'text-slate-500 hover:text-[#B45309]'
+                    ? 'text-[#241C24]'
+                    : 'text-slate-500 hover:text-[#A67C1E]'
                 }`}
               >
                 {tab.label}
@@ -186,17 +186,17 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
                   </span>
                 </div>
 
-                <div className="mt-3.5 overflow-hidden rounded-xl border border-slate-100 bg-white">
+                <div className="mt-3.5 overflow-hidden rounded-xl border border-slate-100 bg-[#FFFDF7]">
                   <img
                     src={pack.image}
                     alt={pack.title}
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="aspect-square w-full object-cover transition-transform duration-300 hover:scale-[1.03]"
                   />
                 </div>
 
-                <h3 className="font-display mt-4 text-2xl font-bold text-[#14224A]">
+                <h3 className="font-display mt-4 text-2xl font-bold text-[#241C24]">
                   {pack.title}
                 </h3>
                 <p className="mt-1 text-sm text-slate-600">{pack.headline}</p>
@@ -240,7 +240,7 @@ export function SolutionsSection({ onSelectPackForQuote }: SolutionsSectionProps
                 aria-label={`Scroll to ${pack.title}`}
                 className={`h-2 rounded-full transition-all ${
                   activeCardIdx === idx
-                    ? 'w-7 bg-gradient-to-r from-[#D4AF37] via-[#EC4899] to-[#0EA5E9]'
+                    ? 'w-7 bg-gradient-to-r from-[#D4AF37] via-[#E11D74] to-[#F59E0B]'
                     : 'w-2 bg-slate-300 hover:bg-slate-400'
                 }`}
               />

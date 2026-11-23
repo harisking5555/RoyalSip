@@ -67,7 +67,7 @@ export function AmbientLightCursor() {
       className="pointer-events-none fixed left-0 top-0 z-10 hidden h-[440px] w-[440px] rounded-full opacity-0 transition-opacity duration-300 lg:block"
       style={{
         background:
-          'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.20) 0%, rgba(236, 72, 153, 0.14) 32%, rgba(14, 165, 233, 0.12) 60%, transparent 74%)',
+          'radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.22) 0%, rgba(225, 29, 116, 0.14) 38%, rgba(254, 243, 199, 0.14) 65%, transparent 76%)',
         filter: 'blur(26px)',
         willChange: 'transform',
       }}

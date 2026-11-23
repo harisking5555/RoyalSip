@@ -79,7 +79,7 @@ export function HighlightsSlider() {
             type="button"
             onClick={() => stepTrack('left')}
             aria-label="Previous highlight"
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
@@ -114,7 +114,7 @@ export function HighlightsSlider() {
             type="button"
             onClick={() => stepTrack('right')}
             aria-label="Next highlight"
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
           >
             <ChevronRight className="h-4 w-4" />
           </button>

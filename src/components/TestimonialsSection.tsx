@@ -85,7 +85,7 @@ export function TestimonialsSection() {
     >
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-[#14224A] sm:text-5xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-[#241C24] sm:text-5xl">
             Trusted across{' '}
             <span className="rainbow-heading italic">Lahore events.</span>
           </h2>
@@ -95,7 +95,7 @@ export function TestimonialsSection() {
               type="button"
               onClick={() => stepTrack('left')}
               aria-label="Previous testimonial"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
@@ -103,7 +103,7 @@ export function TestimonialsSection() {
               type="button"
               onClick={() => stepTrack('right')}
               aria-label="Next testimonial"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
             >
               <ChevronRight className="h-4 w-4" />
             </button>
@@ -133,7 +133,7 @@ export function TestimonialsSection() {
               </div>
 
               <div className="mt-5 border-t border-slate-100 pt-4">
-                <p className="font-display text-base font-bold text-[#14224A]">{item.author}</p>
+                <p className="font-display text-base font-bold text-[#241C24]">{item.author}</p>
                 <p className="mt-0.5 text-xs font-medium text-slate-500">
                   {item.role} · {item.company}
                 </p>
@@ -151,7 +151,7 @@ export function TestimonialsSection() {
               aria-label={`View testimonial by ${t.author}`}
               className={`h-2 rounded-full transition-all ${
                 activeIdx === idx
-                  ? 'w-7 bg-gradient-to-r from-[#D4AF37] via-[#EC4899] to-[#0EA5E9]'
+                  ? 'w-7 bg-gradient-to-r from-[#D4AF37] via-[#E11D74] to-[#F59E0B]'
                   : 'w-2 bg-slate-300 hover:bg-slate-400'
               }`}
             />

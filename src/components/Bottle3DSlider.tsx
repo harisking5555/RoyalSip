@@ -75,13 +75,13 @@ export function Bottle3DSlider({
   return (
     <section
       id="bottle-slider"
-      className={`${sectionClassName} relative overflow-hidden border-t border-[#0B193D]/10 py-14 sm:py-16`}
+      className={`${sectionClassName} relative overflow-hidden border-t border-[#D4AF37]/25 py-14 sm:py-16`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-[#0B193D] sm:text-5xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-[#241C24] sm:text-5xl">
             {headingPrefix}{' '}
             <span className="rainbow-heading italic">{headingHighlight}</span>
           </h2>
@@ -92,7 +92,7 @@ export function Bottle3DSlider({
               type="button"
               onClick={goPrev}
               aria-label="Previous slide"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/55 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/55 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -100,7 +100,7 @@ export function Bottle3DSlider({
               type="button"
               onClick={goNext}
               aria-label="Next slide"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/55 bg-white text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#D4AF37]/55 bg-white text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] active:scale-95"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -111,7 +111,7 @@ export function Bottle3DSlider({
         <div
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
-          className="perspective-1200 relative mt-8 h-[520px] touch-pan-y sm:mt-10 sm:h-[420px] md:h-[430px]"
+          className="perspective-1200 relative mt-8 h-[610px] touch-pan-y sm:mt-10 sm:h-[460px]"
         >
           <div className="relative flex h-full items-center justify-center">
             {slides.map((slide, index) => {
@@ -144,7 +144,7 @@ export function Bottle3DSlider({
                       ? 'transform 0.25s ease-out, opacity 0.35s ease'
                       : 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease',
                   }}
-                  className={`absolute w-full max-w-[380px] rounded-2xl border border-[#D4AF37]/40 bg-white/95 p-4 shadow-[0_26px_60px_-20px_rgba(180,123,20,0.2)] backdrop-blur-sm sm:w-[90%] sm:max-w-[780px] sm:p-6 ${
+                  className={`absolute w-[94%] max-w-[380px] rounded-2xl border border-[#D4AF37]/40 bg-white/95 p-4 shadow-[0_26px_60px_-20px_rgba(180,123,20,0.2)] backdrop-blur-sm sm:w-[90%] sm:max-w-[780px] sm:p-6 ${
                     isCenter ? 'rainbow-hover-card' : 'hidden cursor-pointer sm:block'
                   }`}
                 >
@@ -153,22 +153,22 @@ export function Bottle3DSlider({
                     aria-hidden="true"
                   />
 
-                  <div className="grid grid-cols-1 items-center gap-5 sm:grid-cols-12 sm:gap-6">
-                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-white sm:col-span-6">
+                  <div className="grid grid-cols-1 items-center gap-4 sm:grid-cols-12 sm:gap-6">
+                    <div className="overflow-hidden rounded-xl border border-slate-100 bg-[#FFFDF7] sm:col-span-5">
                       <img
                         src={slide.image}
                         alt={slide.title}
                         referrerPolicy="no-referrer"
-                        className="aspect-[4/3] w-full object-cover"
+                        className="aspect-square max-h-[260px] w-full object-cover sm:max-h-none"
                       />
                     </div>
 
-                    <div className="flex flex-col justify-between sm:col-span-6">
+                    <div className="flex flex-col justify-between sm:col-span-7">
                       <div>
-                        <p className="text-xs font-bold tracking-wide text-[#B45309] uppercase">
+                        <p className="text-xs font-bold tracking-wide text-[#A67C1E] uppercase">
                           {slide.tag}
                         </p>
-                        <h3 className="font-display mt-1.5 text-2xl font-bold text-[#14224A] sm:text-3xl">
+                        <h3 className="font-display mt-1.5 text-2xl font-bold text-[#241C24] sm:text-3xl">
                           {slide.title}
                         </h3>
                         <p className="mt-2 text-sm leading-relaxed text-slate-600">
@@ -178,7 +178,7 @@ export function Bottle3DSlider({
                         <div className="mt-4 flex flex-wrap items-center gap-2.5 text-xs font-semibold text-slate-700">
                           <span>{slide.volume}</span>
                           <span aria-hidden="true">·</span>
-                          <span className="num-clean font-bold text-[#14224A]">
+                          <span className="num-clean font-bold text-[#E11D74]">
                             {slide.priceRange}
                           </span>
                         </div>
@@ -202,9 +202,9 @@ export function Bottle3DSlider({
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
-                          className="inline-flex items-center gap-1.5 rounded-xl border border-[#D4AF37]/40 bg-white px-3.5 py-2.5 text-xs font-bold text-[#14224A] transition-colors hover:border-[#D4AF37] hover:bg-amber-50/40 whitespace-nowrap"
+                          className="inline-flex items-center gap-1.5 rounded-xl border border-[#D4AF37]/40 bg-white px-3.5 py-2.5 text-xs font-bold text-[#241C24] transition-colors hover:border-[#E11D74] hover:text-[#E11D74] whitespace-nowrap"
                         >
-                          <MessageCircle className="h-3.5 w-3.5 text-emerald-600" />
+                          <MessageCircle className="h-3.5 w-3.5 text-[#E11D74]" />
                           <span>Order on WhatsApp</span>
                         </a>
                       </div>
@@ -226,7 +226,7 @@ export function Bottle3DSlider({
               aria-label={`View slide ${idx + 1}: ${s.title}`}
               className={`h-2.5 rounded-full transition-all ${
                 activeIndex === idx
-                  ? 'w-8 bg-gradient-to-r from-[#D4AF37] via-[#EC4899] to-[#0EA5E9]'
+                  ? 'w-8 bg-gradient-to-r from-[#D4AF37] via-[#E11D74] to-[#F59E0B]'
                   : 'w-2.5 bg-slate-300 hover:bg-slate-400'
               }`}
             />

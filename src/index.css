@@ -4,16 +4,18 @@
   :root {
     --font-display: 'Playfair Display', Georgia, serif;
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --royal-navy: #14224A;
-    --royal-gold: #D4AF37;
-    --royal-gold-deep: #B47B14;
+    --brand-gold: #D4AF37;
+    --brand-gold-deep: #A67C1E;
+    --brand-ivory: #FFFDF7;
+    --brand-rose: #E11D74;
+    --brand-ink: #241C24;
   }
 
   html {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
     background-color: #FFFDF7;
-    color: #14224A;
+    color: #241C24;
   }
 
   h1, h2, h3, .font-display {
@@ -26,85 +28,81 @@
   }
 }
 
-/* Custom Colorful & Crown Gold Scrollbar */
+/* Official RoyalSip Scrollbar (Gold, Ivory & Rose Pink) */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFFBF0;
-  border-left: 1px solid #F3E8C8;
+  background: #FFFBF2;
+  border-left: 1px solid #F3E4DF;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     180deg,
     #D4AF37 0%,
-    #F59E0B 25%,
-    #EC4899 55%,
-    #0EA5E9 82%,
-    #10B981 100%
+    #F59E0B 32%,
+    #EC4899 68%,
+    #E11D74 100%
   );
   border-radius: 9999px;
-  border: 2px solid #FFFBF0;
+  border: 2px solid #FFFBF2;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(
     180deg,
-    #B45309 0%,
-    #D97706 30%,
-    #DB2777 60%,
-    #0284C7 100%
+    #B47B14 0%,
+    #D97706 40%,
+    #BE185D 100%
   );
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #D4AF37 #FFFBF0;
+  scrollbar-color: #D4AF37 #FFFBF2;
 }
 
-/* Luminous Crown Gold & Colorful Gradient Section Canvases */
+/* Official Brand Palette Canvases: Gold, Ivory & Rose Pink */
 .section-grad-hero {
   background:
-    radial-gradient(ellipse 68% 58% at 88% 14%, rgba(212, 175, 55, 0.28), transparent 64%),
-    radial-gradient(ellipse 56% 52% at 14% 28%, rgba(245, 158, 11, 0.16), transparent 62%),
-    radial-gradient(ellipse 55% 48% at 62% 92%, rgba(236, 72, 153, 0.12), transparent 64%),
-    linear-gradient(155deg, #FFFDF5 0%, #FEF9E7 48%, #FDF2F8 100%);
+    radial-gradient(ellipse 68% 58% at 88% 14%, rgba(212, 175, 55, 0.25), transparent 64%),
+    radial-gradient(ellipse 56% 52% at 14% 28%, rgba(236, 72, 153, 0.14), transparent 62%),
+    radial-gradient(ellipse 55% 48% at 62% 92%, rgba(244, 114, 182, 0.16), transparent 64%),
+    linear-gradient(155deg, #FFFDF7 0%, #FEF8E8 48%, #FDF2F8 100%);
 }
 
 .section-grad-prism {
   background:
-    radial-gradient(ellipse 65% 55% at 12% 18%, rgba(212, 175, 55, 0.22), transparent 60%),
-    radial-gradient(ellipse 60% 55% at 86% 80%, rgba(245, 158, 11, 0.14), transparent 62%),
-    radial-gradient(ellipse 50% 45% at 52% 48%, rgba(14, 165, 233, 0.10), transparent 65%),
-    linear-gradient(160deg, #FFFDF6 0%, #FFF9E6 52%, #F0F9FF 100%);
+    radial-gradient(ellipse 65% 55% at 12% 18%, rgba(212, 175, 55, 0.20), transparent 60%),
+    radial-gradient(ellipse 60% 55% at 86% 80%, rgba(236, 72, 153, 0.13), transparent 62%),
+    linear-gradient(160deg, #FFFDF7 0%, #FFF7EC 52%, #FCE7F3 100%);
 }
 
 .section-grad-royal {
   background:
     radial-gradient(ellipse 60% 52% at 85% 20%, rgba(212, 175, 55, 0.22), transparent 60%),
-    radial-gradient(ellipse 56% 50% at 18% 82%, rgba(236, 72, 153, 0.12), transparent 62%),
-    linear-gradient(150deg, #FFFBF0 0%, #FEF5FF 50%, #F0F9FF 100%);
+    radial-gradient(ellipse 56% 50% at 18% 82%, rgba(225, 29, 116, 0.12), transparent 62%),
+    linear-gradient(150deg, #FFFBF2 0%, #FDF2F8 55%, #FEF9E7 100%);
 }
 
 .section-grad-gold {
   background:
     radial-gradient(ellipse 62% 55% at 80% 18%, rgba(212, 175, 55, 0.26), transparent 60%),
-    radial-gradient(ellipse 52% 48% at 14% 75%, rgba(16, 185, 129, 0.10), transparent 60%),
-    linear-gradient(160deg, #FFF9E6 0%, #FFFDF8 55%, #F2FDF8 100%);
+    radial-gradient(ellipse 52% 48% at 14% 75%, rgba(236, 72, 153, 0.12), transparent 60%),
+    linear-gradient(160deg, #FEF9E7 0%, #FFFDF7 55%, #FDF2F8 100%);
 }
 
-/* Signature Gold + Rainbow Gradient Headings */
+/* Signature Gold + Rose Pink Gradient Headings */
 .rainbow-heading {
   background: linear-gradient(
     102deg,
-    #B45309 0%,
-    #D4AF37 22%,
-    #EC4899 50%,
-    #8B5CF6 76%,
-    #0284C7 100%
+    #9A6B11 0%,
+    #D4AF37 32%,
+    #E11D74 70%,
+    #EC4899 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -114,18 +112,17 @@
 .prism-hairline {
   background: linear-gradient(
     90deg,
-    #B45309,
+    #B47B14,
     #D4AF37,
-    #EC4899,
-    #8B5CF6,
-    #0EA5E9,
-    #10B981
+    #F472B6,
+    #E11D74,
+    #D4AF37
   );
 }
 
-/* Vibrant Colorful Rainbow Gradient Buttons */
+/* Vibrant Rose-Pink to Gold Gradient CTA Button */
 .rainbow-btn {
-  background: linear-gradient(112deg, #D97706 0%, #EC4899 48%, #0EA5E9 100%);
+  background: linear-gradient(112deg, #D97706 0%, #E11D74 52%, #EC4899 100%);
   background-size: 165% 100%;
   background-position: 0% 50%;
   color: #FFFFFF;
@@ -134,15 +131,15 @@
 
 .rainbow-btn:hover {
   background-position: 100% 50%;
-  box-shadow: 0 14px 30px -8px rgba(236, 72, 153, 0.42);
+  box-shadow: 0 14px 30px -8px rgba(225, 29, 116, 0.38);
 }
 
-/* Logo Crown Gold Metallic Gradient Button (High Contrast Deep Ink on Gold) */
+/* Metallic Crown Gold Button (High-Contrast Deep Ink on Gold) */
 .royal-btn {
   background: linear-gradient(120deg, #F6E28A 0%, #D4AF37 52%, #C4931E 100%);
   background-size: 160% 100%;
   background-position: 0% 50%;
-  color: #14224A;
+  color: #241C24;
   border: 1px solid rgba(180, 123, 20, 0.45);
   transition: background-position 0.35s ease, transform 0.18s ease, box-shadow 0.25s ease;
 }
@@ -152,7 +149,7 @@
   box-shadow: 0 14px 28px -8px rgba(212, 175, 55, 0.55);
 }
 
-/* Lighting Under-Glow Card Effect (Illuminates cleanly from underneath on hover) */
+/* Lighting Under-Glow Card Effect (Gold & Rose Pink Ambient Aura) */
 .rainbow-hover-card {
   position: relative;
   overflow: hidden;
@@ -167,9 +164,9 @@
   pointer-events: none;
   background: radial-gradient(
     360px circle at var(--mx, 50%) var(--my, 85%),
-    rgba(212, 175, 55, 0.24),
-    rgba(236, 72, 153, 0.14) 38%,
-    rgba(14, 165, 233, 0.12) 72%,
+    rgba(212, 175, 55, 0.22),
+    rgba(236, 72, 153, 0.14) 48%,
+    rgba(255, 253, 247, 0.08) 78%,
     transparent 100%
   );
   transition: opacity 0.25s ease;
@@ -184,7 +181,7 @@
   height: 3px;
   opacity: 0;
   pointer-events: none;
-  background: linear-gradient(90deg, #D4AF37, #EC4899, #8B5CF6, #0EA5E9);
+  background: linear-gradient(90deg, #D4AF37, #E11D74, #F472B6, #D4AF37);
   transition: opacity 0.28s ease;
 }
 
@@ -195,11 +192,11 @@
 
 .rainbow-hover-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(212, 175, 55, 0.65);
+  border-color: rgba(212, 175, 55, 0.7);
   box-shadow:
     0 22px 46px -14px rgba(180, 123, 20, 0.18),
-    0 14px 28px -10px rgba(212, 175, 55, 0.34),
-    0 10px 26px -10px rgba(236, 72, 153, 0.20);
+    0 14px 28px -10px rgba(212, 175, 55, 0.32),
+    0 10px 26px -10px rgba(225, 29, 116, 0.18);
 }
 
 /* Range slider styling */
@@ -208,7 +205,7 @@ input[type="range"].royal-range {
   appearance: none;
   height: 6px;
   border-radius: 9999px;
-  background: linear-gradient(90deg, #B45309, #D4AF37, #EC4899, #0EA5E9, #10B981);
+  background: linear-gradient(90deg, #B47B14, #D4AF37, #E11D74, #F472B6);
   outline: none;
 }
 
@@ -219,7 +216,7 @@ input[type="range"].royal-range::-webkit-slider-thumb {
   height: 20px;
   border-radius: 9999px;
   background: #D4AF37;
-  border: 2px solid #14224A;
+  border: 2px solid #241C24;
   box-shadow: 0 2px 8px rgba(180, 123, 20, 0.4);
   cursor: pointer;
 }

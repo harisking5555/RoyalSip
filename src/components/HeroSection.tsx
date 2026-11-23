@@ -73,7 +73,7 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               >
-                <h1 className="font-display text-balance text-4xl font-bold leading-[1.08] tracking-tight text-[#14224A] sm:text-5xl lg:text-[62px]">
+                <h1 className="font-display text-balance text-4xl font-bold leading-[1.08] tracking-tight text-[#241C24] sm:text-5xl lg:text-[62px]">
                   {active.headlineStart}{' '}
                   <span className="rainbow-heading italic">{active.headlineHighlight}</span>
                 </h1>
@@ -110,7 +110,7 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
                   type="button"
                   onClick={prevSlide}
                   aria-label="Previous hero banner"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/90 text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] hover:text-[#14224A] active:scale-95"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/90 text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] hover:text-[#241C24] active:scale-95"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
@@ -118,7 +118,7 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
                   type="button"
                   onClick={nextSlide}
                   aria-label="Next hero banner"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/90 text-[#14224A] shadow-sm transition-all hover:bg-[#D4AF37] hover:text-[#14224A] active:scale-95"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/90 text-[#241C24] shadow-sm transition-all hover:bg-[#D4AF37] hover:text-[#241C24] active:scale-95"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </button>
@@ -135,7 +135,7 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
                   aria-label={`Show banner ${idx + 1}: ${s.headlineStart}`}
                   className={`h-2 rounded-full transition-all ${
                     slideIdx === idx
-                      ? 'w-8 bg-gradient-to-r from-[#D4AF37] via-[#EC4899] to-[#0EA5E9]'
+                      ? 'w-8 bg-gradient-to-r from-[#D4AF37] via-[#E11D74] to-[#F59E0B]'
                       : 'w-2 bg-[#D4AF37]/35 hover:bg-[#D4AF37]/65'
                   }`}
                 />
@@ -158,14 +158,14 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
                   transform: `rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg)`,
                   transition: 'transform 0.2s ease-out',
                 }}
-                className="rainbow-hover-card mx-auto max-w-[430px] rounded-2xl border border-[#D4AF37]/45 bg-white/90 p-2.5 shadow-[0_22px_50px_-16px_rgba(180,123,20,0.22)] backdrop-blur-sm"
+                className="rainbow-hover-card mx-auto max-w-[400px] rounded-2xl border border-[#D4AF37]/45 bg-white/95 p-2.5 shadow-[0_22px_50px_-16px_rgba(180,123,20,0.22)] backdrop-blur-sm"
               >
-                <div className="overflow-hidden rounded-xl bg-white">
+                <div className="overflow-hidden rounded-xl bg-[#FFFDF7]">
                   <img
                     src={active.image}
                     alt={active.imageAlt}
                     referrerPolicy="no-referrer"
-                    className="aspect-[4/3] w-full object-cover"
+                    className="aspect-square w-full object-cover"
                   />
                 </div>
               </motion.div>
