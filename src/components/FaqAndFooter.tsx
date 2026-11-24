@@ -110,9 +110,12 @@ export function Footer({ onNavigate }: FooterProps) {
                 className="h-12 w-auto object-contain"
               />
             </a>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-600">
-              {BRAND.tagline} Custom 500ml &amp; 1.5L mineral water and chilled fruit juice bottles
-              crafted for weddings, marquees, corporates, and restaurants in Lahore.
+            <p className="font-display mt-3 text-base font-bold italic text-[#A67C1E]">
+              {BRAND.tagline}
+            </p>
+            <p className="mt-1.5 max-w-xs text-sm leading-relaxed text-slate-600">
+              Custom 500ml &amp; 1.5L pure drinking water and chilled fruit juice bottles crafted for
+              weddings, marquees, corporates, and restaurants all over Lahore.
             </p>
 
             {/* Social Media Icons ONLY (No text labels) */}
@@ -221,8 +224,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <div className="flex items-start gap-2 pt-0.5 text-xs leading-relaxed text-slate-500">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#D4AF37]" />
                 <span>
-                  Delivering across DHA, Gulberg, Model Town, Bahria Town &amp; all Lahore marquees
-                  (Mon–Sun · 9 AM – 10 PM).
+                  Service Area: All over Lahore (Mon–Sun · 9 AM – 10 PM).
                 </span>
               </div>
             </div>
@@ -233,7 +235,7 @@ export function Footer({ onNavigate }: FooterProps) {
           <p>
             © {new Date().getFullYear()} {BRAND.domain} · All rights reserved.
           </p>
-          <p>RoyalSip Beverages · Gold, Ivory &amp; Rose Pink Collection · Lahore</p>
+          <p>RoyalSip Beverages · {BRAND.tagline} · All over Lahore</p>
         </div>
       </div>
     </footer>

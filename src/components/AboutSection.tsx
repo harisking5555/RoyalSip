@@ -32,14 +32,14 @@ export function AboutSection({ onNavigate }: AboutSectionProps) {
               About Us &amp; Company Profile
             </p>
             <h1 className="font-display mt-1 text-4xl font-bold tracking-tight text-[#241C24] sm:text-5xl">
-              Your bottle,{' '}
-              <span className="rainbow-heading italic">your identity.</span>
+              Turn water{' '}
+              <span className="rainbow-heading italic">into your brand.</span>
             </h1>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
-              <strong>RoyalSip Beverages</strong> ({BRAND.domain}) is a Lahore-based beverage and
-              custom-label bottling brand delivering pure 500ml &amp; 1.5L drinking water alongside
-              our chilled RoyalSip Fruit Juices &amp; Flavoured Water collection. We bridge hospitality
-              craftsmanship with direct-to-door logistics across every celebration and workplace.
+              <strong>RoyalSip Beverages</strong> ({BRAND.domain}) is a Lahore-based custom
+              beverage &amp; private-label bottling brand delivering <strong>Pure Drinking Water</strong>{' '}
+              (500ml &amp; 1.5L) alongside our chilled RoyalSip Fruit Juices &amp; Flavoured Water
+              collection. We serve hospitality tables, weddings, and workplaces all over Lahore.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -152,6 +152,10 @@ export function AboutSection({ onNavigate }: AboutSectionProps) {
                 <strong>Company:</strong> {BRAND.name}
               </p>
               <p>
+                <strong>Tagline:</strong>{' '}
+                <span className="font-semibold italic text-[#A67C1E]">{BRAND.tagline}</span>
+              </p>
+              <p>
                 <strong>Website:</strong> {BRAND.domain}
               </p>
               <p>
@@ -166,7 +170,7 @@ export function AboutSection({ onNavigate }: AboutSectionProps) {
               </p>
               <p className="flex items-center gap-1.5 pt-1 text-slate-500">
                 <Globe className="h-3.5 w-3.5 text-[#A67C1E]" />
-                <span>Service: Lahore · Cash on Delivery</span>
+                <span>Service Area: All over Lahore · Cash on Delivery</span>
               </p>
             </div>
           </div>

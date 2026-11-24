@@ -1,7 +1,7 @@
 import { MouseEvent, TouchEvent, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ArrowRight, ChevronLeft, ChevronRight, Gift } from 'lucide-react';
-import { HERO_SLIDES, PageId } from '../data/royalsipData';
+import { BRAND, HERO_SLIDES, PageId } from '../data/royalsipData';
 
 interface HeroSectionProps {
   onJumpToSample: () => void;
@@ -63,8 +63,11 @@ export function HeroSection({ onJumpToSample, onNavigate }: HeroSectionProps) {
     >
       <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
-          {/* Left Banner Copy + Compact 2 Buttons + Slider Arrows Beside/Below */}
+          {/* Left Banner Copy + Official Tagline + Compact 2 Buttons */}
           <div className="lg:col-span-7">
+            <p className="font-display mb-2 text-sm font-bold italic tracking-wide text-[#A67C1E] sm:text-base">
+              {BRAND.tagline}
+            </p>
             <AnimatePresence mode="wait">
               <motion.div
                 key={active.id}

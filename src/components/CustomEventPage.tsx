@@ -105,7 +105,7 @@ export function CustomEventPage() {
         {/* Introduction Header */}
         <div className="max-w-3xl">
           <p className="text-xs font-bold tracking-wider text-[#E11D74] uppercase">
-            Customise Your Event · Lahore
+            Customise Your Event · All over Lahore
           </p>
           <h1 className="font-display mt-1 text-4xl font-bold tracking-tight text-[#241C24] sm:text-5xl">
             Bespoke labels for{' '}
@@ -388,7 +388,7 @@ export function CustomEventPage() {
                       rows={3}
                       value={labelNotes}
                       onChange={(e) => setLabelNotes(e.target.value)}
-                      placeholder="e.g. Ayesha & Ali · 12.12.2026 · Gold & Rose Pink theme..."
+                      placeholder="e.g. Ayesha & Ali · Walima · 12.12.2026"
                       className="w-full rounded-xl border border-slate-300 bg-[#FFFDF7] px-3.5 py-2.5 text-sm focus:border-[#D4AF37] focus:bg-white focus:outline-none"
                     />
                   </div>

@@ -158,7 +158,7 @@ export function CartDrawer({
                   <div className="rounded-xl border border-[#D4AF37]/30 bg-amber-50/60 px-3.5 py-2.5 text-xs font-medium text-[#241C24]">
                     {subtotal >= 10000 ? (
                       <span className="font-bold text-emerald-700">
-                        Free Lahore Delivery unlocked on your order.
+                        Free Delivery All Over Lahore unlocked on your order.
                       </span>
                     ) : (
                       <span>
@@ -166,7 +166,7 @@ export function CartDrawer({
                         <strong className="num-clean">
                           PKR {(10000 - subtotal).toLocaleString()}
                         </strong>{' '}
-                        more for Free Lahore Delivery (otherwise PKR 350).
+                        more for Free Delivery All Over Lahore (otherwise PKR 350).
                       </span>
                     )}
                   </div>

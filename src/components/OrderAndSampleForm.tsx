@@ -203,10 +203,13 @@ export function OrderAndSampleForm({ prefill }: OrderAndSampleFormProps) {
               </div>
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600">
-                <p className="font-bold text-[#241C24]">Lahore Delivery</p>
+                <p className="font-bold text-[#241C24]">Service Area: All over Lahore</p>
                 <p className="mt-1">
                   Marquees, corporate offices, restaurants &amp; doorstep
-                  deliveries across Lahore.
+                  deliveries all over Lahore.
+                </p>
+                <p className="font-display mt-2 font-bold italic text-[#A67C1E]">
+                  {BRAND.tagline}
                 </p>
               </div>
 
@@ -440,7 +443,7 @@ export function OrderAndSampleForm({ prefill }: OrderAndSampleFormProps) {
                           >
                             {mode === 'sample'
                               ? 'Business / Venue Name'
-                              : 'Lahore Area / Venue'}
+                              : 'Venue / Delivery Location (Lahore)'}
                           </label>
                           <input
                             id="order-venue"
@@ -449,8 +452,8 @@ export function OrderAndSampleForm({ prefill }: OrderAndSampleFormProps) {
                             onChange={(e) => setBusinessOrVenue(e.target.value)}
                             placeholder={
                               mode === 'sample'
-                                ? 'e.g. Royal Palm Marquee'
-                                : 'e.g. DHA Phase 5 / Gulberg'
+                                ? 'e.g. Royal Palm Marquee, Lahore'
+                                : 'e.g. Venue, Office or Address (All over Lahore)'
                             }
                             className="w-full rounded-xl border border-slate-300 bg-[#FFFDF7] px-3.5 py-2.5 text-sm text-[#241C24] placeholder-slate-400 focus:border-[#D4AF37] focus:bg-white focus:outline-none"
                           />
@@ -576,7 +579,7 @@ export function OrderAndSampleForm({ prefill }: OrderAndSampleFormProps) {
                           rows={3}
                           value={labelNotes}
                           onChange={(e) => setLabelNotes(e.target.value)}
-                          placeholder="e.g. Ayesha & Ali · Gold & Rose Pink theme..."
+                          placeholder="e.g. Ayesha & Ali · Walima · 12.12.2026"
                           className="w-full rounded-xl border border-slate-300 bg-[#FFFDF7] px-3.5 py-2.5 text-sm text-[#241C24] placeholder-slate-400 focus:border-[#D4AF37] focus:bg-white focus:outline-none"
                         />
                       </div>

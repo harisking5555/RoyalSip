@@ -65,10 +65,10 @@ export interface HeroSlide {
 export const HERO_SLIDES: HeroSlide[] = [
   {
     id: 'hero-brand',
-    headlineStart: 'Turn water',
-    headlineHighlight: 'into your brand.',
+    headlineStart: 'Pure Drinking Water,',
+    headlineHighlight: 'bottled your way.',
     subtitle:
-      'Custom-labeled mineral water & RoyalSip fruit juice bottles crafted for weddings, events, corporates & retail.',
+      'Custom-labeled pure drinking water & RoyalSip fruit juice bottles crafted for weddings, events, corporates & retail all over Lahore.',
     image: BOTTLE_PHOTOS.trioShowcase,
     imageAlt: 'RoyalSip Basic, Standard and Premium custom 500ml bottle lineup',
     primaryLabel: 'Shop Products',
@@ -79,9 +79,9 @@ export const HERO_SLIDES: HeroSlide[] = [
     headlineStart: 'Your Big Day.',
     headlineHighlight: 'On every table.',
     subtitle:
-      'Bespoke couple monograms, wedding dates & gold-foil matte labels delivered to venues across Lahore.',
+      'Bespoke couple monograms, wedding dates & gold-foil matte labels delivered to venues all over Lahore.',
     image: BOTTLE_PHOTOS.labelStandard,
-    imageAlt: 'RoyalSip Ayesha and Ali wedding bottle on ivory marble',
+    imageAlt: 'RoyalSip Ayesha and Ali wedding bottle on marble surface',
     primaryLabel: 'Customise Event',
     primaryTarget: 'custom-event',
   },
@@ -90,7 +90,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     headlineStart: 'Pure Juices &',
     headlineHighlight: 'Flavoured Water.',
     subtitle:
-      'Chilled Mango Glow, Kinnow Zest, Lemon-Mint & Rose Peach Water paired with RoyalSip event water.',
+      'Chilled Mango Glow, Kinnow Zest, Lemon-Mint & Rose Peach Water paired with RoyalSip Pure Drinking Water.',
     image: BOTTLE_PHOTOS.juicesRange,
     imageAlt: 'Single 500ml RoyalSip Fruit Juices and Flavoured Water bottle surrounded by mango, citrus, lime, peach and mint',
     primaryLabel: 'View Combo Deals',
@@ -138,7 +138,7 @@ export const HIGHLIGHT_SLIDES: HighlightSlideItem[] = [
   {
     id: 'hl-cod',
     metric: 'COD Only',
-    label: 'Cash on Delivery across Lahore',
+    label: 'Cash on Delivery · All over Lahore',
     accentGradient: 'from-[#D4AF37] via-rose-400 to-amber-500',
     metricColor: '#A67C1E',
   },
@@ -184,7 +184,7 @@ export const ROYALSIP_RANGES: BeverageRangeCategory[] = [
   {
     id: 'range-pure-water',
     title: 'Pure Drinking Water',
-    subtitle: 'Crisp 500ml & 1.5L mineral water',
+    subtitle: 'Crisp 500ml & 1.5L pure drinking water',
     targetPage: 'shop',
     ringType: 'water',
   },
@@ -277,12 +277,12 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     id: 'prod-water-500-case',
     sku: 'RS-W500-24',
     category: 'water',
-    name: 'RoyalSip Basic Silver Water (24 Bottles)',
+    name: 'RoyalSip Basic Pure Drinking Water (24 Bottles)',
     volume: '500ml × 24 Case · PKR 80/bottle',
     packSize: 'Case of 24',
     price: 1920,
     summary:
-      'Crystal-clear 500ml mineral water bottles with signature silver-white RoyalSip label.',
+      'Crystal-clear 500ml pure drinking water bottles with signature silver-white RoyalSip label.',
     image: BOTTLE_PHOTOS.labelBasic,
     accentHex: '#A67C1E',
   },
@@ -373,7 +373,7 @@ export const SHOP_PRODUCTS: ShopProduct[] = [
     packSize: 'Case of 24',
     price: 2640,
     summary:
-      'Pure mineral water lightly infused with delicate rose & orchard peach notes.',
+      'Pure drinking water lightly infused with delicate rose & orchard peach notes.',
     image: BOTTLE_PHOTOS.rosePeachWater,
     accentHex: '#E11D74',
   },
@@ -406,7 +406,7 @@ export const DEAL_BUNDLES: DealBundle[] = [
     contents: [
       '200 × 500ml RoyalSip Basic Label Bottles',
       '24 × 1.5L Boardroom Table Bottles',
-      'Free Lahore Office Delivery',
+      'Free Office Delivery All Over Lahore',
     ],
     image: BOTTLE_PHOTOS.corporateTable,
     accentGradient: 'from-[#D4AF37] via-amber-500 to-rose-400',
@@ -438,7 +438,7 @@ export const DEAL_BUNDLES: DealBundle[] = [
     contents: [
       '500 × 500ml Standard Wedding Label Bottles',
       'Custom Couple Names, Date & Décor Colours',
-      'Direct Shadi Hall / Marquee Delivery',
+      'Direct Shadi Hall Delivery All Over Lahore',
     ],
     image: BOTTLE_PHOTOS.labelStandard,
     accentGradient: 'from-[#E11D74] via-rose-500 to-[#D4AF37]',
@@ -454,7 +454,7 @@ export const DEAL_BUNDLES: DealBundle[] = [
     contents: [
       '250 × 500ml Black & Gold Foil Luxury Bottles',
       'Monogram Crest + Couple / Host Typography',
-      'Priority Lahore Venue Delivery',
+      'Priority Venue Delivery All Over Lahore',
     ],
     image: BOTTLE_PHOTOS.labelPremium,
     accentGradient: 'from-[#D4AF37] via-amber-600 to-[#E11D74]',
@@ -523,8 +523,8 @@ export interface DrinkVariant {
 }
 
 export const DRINK_VARIANTS: DrinkVariant[] = [
-  { id: 'water-500', label: '500ml Pure Water', volume: '500ml' },
-  { id: 'water-1500', label: '1.5L Family Water', volume: '1.5L' },
+  { id: 'water-500', label: '500ml Pure Drinking Water', volume: '500ml' },
+  { id: 'water-1500', label: '1.5L Pure Drinking Water', volume: '1.5L' },
   { id: 'juice-orange', label: 'RoyalSip Kinnow Orange (500ml)', volume: '500ml' },
   { id: 'juice-mango', label: 'RoyalSip Mango Glow (500ml)', volume: '500ml' },
   { id: 'juice-lime', label: 'RoyalSip Lemon-Mint (500ml)', volume: '500ml' },
@@ -609,7 +609,7 @@ export const SOLUTIONS: SolutionPack[] = [
     specs: '500+ Bottles · 500ml',
     bullets: [
       'Couple names, date & décor-matched labels',
-      'Free venue delivery across Lahore',
+      'Free venue delivery all over Lahore',
     ],
     ctaText: 'Customise Wedding',
     accentGradient: 'from-[#E11D74] via-rose-500 to-[#D4AF37]',
@@ -742,7 +742,7 @@ export const PRICING_TIERS: PricingTier[] = [
     maxPrice: 100,
     rangeLabel: '80–100',
     subtitle: 'Silver-white 1-colour label · 500ml / 1.5L',
-    includedProducts: '500ml or 1.5L Pure Mineral Water',
+    includedProducts: '500ml or 1.5L Pure Drinking Water',
     previewImage: BOTTLE_PHOTOS.labelBasic,
     features: [
       'Clean metallic silver 1-colour custom label',
@@ -758,14 +758,14 @@ export const PRICING_TIERS: PricingTier[] = [
     maxPrice: 150,
     rangeLabel: '120–150',
     subtitle: 'Full-colour wrap · Names, logo & event theme',
-    includedProducts: '500ml / 1.5L Water or Fruit Juice Pairing',
+    includedProducts: '500ml / 1.5L Pure Drinking Water or Fruit Juice Pairing',
     previewImage: BOTTLE_PHOTOS.labelStandard,
     featured: true,
     features: [
       'Full-colour gloss custom wrap label',
       'Couple names, event dates & brand palette',
       'Optional pairing with RoyalSip Fruit Juices',
-      'Free digital artwork & priority Lahore dispatch',
+      'Free digital artwork & priority dispatch all over Lahore',
     ],
   },
   {
@@ -781,7 +781,7 @@ export const PRICING_TIERS: PricingTier[] = [
       'Velvet-matte finish with metallic gold foil look',
       'Custom circular monogram crest & gold border',
       'Bespoke calligraphy for weddings & VVIP suites',
-      'Dedicated Lahore venue delivery & setup',
+      'Dedicated venue delivery & setup all over Lahore',
     ],
   },
 ];
@@ -800,7 +800,7 @@ export const PROCESS_STEPS = [
   {
     step: '03',
     title: 'We fill & deliver',
-    description: 'Sealed 500ml & 1.5L bottles delivered across Lahore on schedule.',
+    description: 'Sealed 500ml & 1.5L pure drinking water & juice bottles delivered all over Lahore.',
   },
 ];
 
@@ -820,13 +820,13 @@ export const TESTIMONIALS: TestimonialItem[] = [
       'Guests kept photographing our Black & Gold Luxury Edition bottles at the Walima. The monogram crest looked regal on every table.',
     author: 'Sana & Bilal Ahmed',
     role: 'Wedding Hosts',
-    company: 'DHA Phase 6, Lahore',
+    company: 'Lahore',
     accentGradient: 'from-[#D4AF37] via-[#E11D74] to-amber-500',
   },
   {
     id: 'test-planner',
     quote:
-      'RoyalSip gives us priority slots even in peak wedding season. Pairing custom water with chilled Mango & Kinnow juices is effortless.',
+      'RoyalSip gives us priority slots even in peak wedding season. Pairing custom pure drinking water with chilled Mango & Kinnow juices is effortless.',
     author: 'Zara Mansoor',
     role: 'Lead Event Planner',
     company: 'Aura Weddings & Marquees',
@@ -838,13 +838,13 @@ export const TESTIMONIALS: TestimonialItem[] = [
       'Switching to our own branded silver-label 500ml table water elevated our dining room presentation instantly.',
     author: 'Chef Adeel Qureshi',
     role: 'Managing Partner',
-    company: 'Saffron Courtyard, Gulberg',
+    company: 'Saffron Courtyard, Lahore',
     accentGradient: 'from-[#D4AF37] via-amber-500 to-rose-400',
   },
   {
     id: 'test-corporate',
     quote:
-      'Fast mock-ups, clean labels, and reliable Cash on Delivery dispatches across our corporate seminar halls in Lahore.',
+      'Fast mock-ups, clean labels, and reliable Cash on Delivery dispatches across our corporate seminar halls all over Lahore.',
     author: 'Hamza Malik',
     role: 'Operations Director',
     company: 'Lahore Business Suites',
@@ -855,7 +855,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
 export const FAQS = [
   {
     q: 'What is the minimum order quantity for custom-label bottles?',
-    a: 'Private party orders start from just 50 bottles (500ml). Wedding Shadi Royale bundles start from 500+ bottles with complimentary Lahore venue delivery.',
+    a: 'Private party orders start from just 50 bottles (500ml). Wedding Shadi Royale bundles start from 500+ bottles with complimentary venue delivery all over Lahore.',
   },
   {
     q: 'What is the difference between Basic, Standard, and Premium packages?',

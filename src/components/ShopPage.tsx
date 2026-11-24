@@ -31,7 +31,7 @@ type ShopFilter = 'all' | 'water' | 'custom-pack' | 'juices';
 
 const SHOP_TABS: { id: ShopFilter; label: string }[] = [
   { id: 'all', label: 'All Products' },
-  { id: 'water', label: 'Mineral Water' },
+  { id: 'water', label: 'Pure Drinking Water' },
   { id: 'custom-pack', label: 'Custom Packs' },
   { id: 'juices', label: 'Juices & Flavoured Water' },
 ];
@@ -79,8 +79,8 @@ export function ShopPage({
     `• Quantity: ${quantity.toLocaleString()} bottles\n` +
     `• Drink Setup: ${
       includeJuiceCombo
-        ? 'Water + Fruit Juice Combo'
-        : 'Pure Mineral Water (500ml/1.5L)'
+        ? 'Pure Drinking Water + Fruit Juice Combo'
+        : 'Pure Drinking Water (500ml/1.5L)'
     }\n` +
     `• Partner / 1st Month 10% Rate: ${
       includePartnerDiscount ? 'Yes' : 'Standard'
